@@ -1,5 +1,8 @@
 # Ignore Vagrant specific stuffs
 box/.vagrant
 
-# Ignote .ssh symlink
+# Ignote .ssh folder
 box/.ssh
+
+# Ignore Sublime Text files
+*.sublime-*
