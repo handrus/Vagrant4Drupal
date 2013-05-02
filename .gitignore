@@ -1,8 +1,11 @@
 # Ignore Vagrant specific stuffs
-box/.vagrant
+.vagrant
 
 # Ignote .ssh folder
-box/.ssh
+.ssh
+
+# Ignore www files (they'll be downloaded programmatically)
+www/*
 
 # Ignore Sublime Text files
 *.sublime-*
