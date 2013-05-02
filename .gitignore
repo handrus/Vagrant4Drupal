@@ -1,0 +1,5 @@
+# Ignore Vagrant specific stuffs
+box/.vagrant
+
+# Ignote .ssh symlink
+box/.ssh
