@@ -1,16 +1,8 @@
 class apache {
-	file {
-		'/var/www':
-			ensure => link,
-			target => '/vagrant/www',
-	}
 	package {
 		'apache2':
-			require => [
-				Exec['apt-get update'],
-				File['/var/www'],
-			],
-}
+			require => Exec['apt-get update'],
+	}
 	service {
 		'apache2':
 			ensure => running,
